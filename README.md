@@ -11,7 +11,7 @@ Library for the Tris10 SenseLight sensor
 
 Initaliser for the class.
 
-### uint8_t get()
+### uint16_t get()
 > No parameters
 
 Returns the analog value read from the sensor at the last time the 'refresh' function was called.
@@ -30,4 +30,4 @@ Sets the enable pin LOW to turn the SenseLight LED off.\
 
 > No parameters
 
-When called the sensor is read and the analog value is stored to a byte in memory.
+When called the sensor is read and the analog value is stored to a int in memory.
