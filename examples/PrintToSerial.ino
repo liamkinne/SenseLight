@@ -7,7 +7,7 @@ void setup() {
 }
 
 void loop() {
-  LightSensor.refresh();
+  LightSensor.refresh(); // Read from the analog input
   Serial.println(LightSensor.get());
   delay(100);
 }
