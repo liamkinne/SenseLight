@@ -19,8 +19,6 @@ void SenseLight::disable() {
 	digitalWrite(_enablePin, LOW);
 }
 
-SenseLight::~SenseLight() { /* NOTHING TO DECONSTRUCT */ }
-
 void SenseLight::refresh() {
 	_value = analogRead(_analogPin);
 }
