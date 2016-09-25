@@ -3,6 +3,8 @@
 SenseLight::SenseLight(uint8_t analogPin, uint8_t enablePin): _analogPin(analogPin), _enablePin(enablePin) {
 	pinMode(_analogPin, INPUT);
 	pinMode(_enablePin, OUTPUT);
+
+	enable(); // Enable by default
 }
 
 SenseLight::~SenseLight() { /* NOTHING TO DECONSTRUCT */ }
